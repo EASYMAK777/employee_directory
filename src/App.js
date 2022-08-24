@@ -1,5 +1,5 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
 
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -11,23 +11,20 @@ import EmployeeTable from "./components/EmployeeTable";
 function App() {
   return (
     <>
-
       <Nav />
       <Layout>
-      {/* two rows with one col, in the first col have a search, in the second col have an employee table */}
-          <Row >
-            <Col>
-              <Search></Search>
-            </Col>
-          </Row>
-          <Row >
-            <Col>
-              <EmployeeTable></EmployeeTable>
-            </Col>
-          </Row>
+        {/* two rows with one col, in the first col have a search, in the second col have an employee table */}
+        <Row>
+          <Col>
+            <Search />
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <EmployeeTable />
+          </Col>
+        </Row>
       </Layout>
-
-
     </>
   );
 }
